@@ -1,4 +1,5 @@
-/**
+
+          /**
  * Sample React Native App
  * https://github.com/facebook/react-native
  *
@@ -7,10 +8,10 @@
  */
 
 import React, {Component} from 'react';
-import {Platform, StyleSheet, Text, View} from 'react-native';
+import {Platform, StyleSheet, Text, View,Image} from 'react-native';
 
 const instructions = Platform.select({
-  ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
+  ios: 'Press Cmd+R to reload,\n' + 'cmd+D or shake for dev menu',
   android:
     'Double tap R on your keyboard to reload,\n' +
     'Shake or press menu button for dev menu',
@@ -22,11 +23,14 @@ export default class App extends Component<Props> {
     return (
       <View style={styles.container}>
       <View>
-        <Text style={styles.welcome}>Hellooooo!</Text>
+        <Text style={styles.welcome}>Hellooooo!</Text>        
         <Text style={styles.instructions}>Nama   : Hanifa Wahyu Listiyani</Text>
         <Text style={styles.instructions}>No        :  15</Text>
         <Text style={styles.instructions}>Kelas   : XI RPL 1</Text>
-        </View>
+        <Image style = {{ width : 300, height : 400 }}
+        source={require('./tataifa.jpg')}
+        />     
+      </View>
       </View>
     );
   }
@@ -37,17 +41,17 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: 'black',
   },
   welcome: {
-    fontSize: 20,
+    fontSize: 25,
     textAlign: 'center',
     margin: 10,
-    color: 'white',
+    color: 'black',
   },
   instructions: {
+    fontSize : 18,
     textAlign: 'left',
-    color: 'white',
+    color: 'black',
     marginBottom: 5,
   },
 });
