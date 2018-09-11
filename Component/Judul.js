@@ -4,16 +4,16 @@ import {Text} from 'react-native';
 class Judul extends Component{
 	render(){
 		return (
-			<Text style = {hani.judul}>BIODATA</Text>
+			<Text style = {hani.judul}>{this.props.judul}</Text>
 			)
 	}
 }
 const hani = {
 	judul : {
-		color : 'white',
+		color : 'black',
 		fontSize : 50,
 		fontWeight : 'bold',
-		backgroundColor : 'black',
+		backgroundColor : 'white',
 	}
 }
 export default Judul;
